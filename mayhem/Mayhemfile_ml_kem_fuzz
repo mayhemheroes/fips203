@@ -1,0 +1,7 @@
+project: fips203
+target: ml_kem_fuzz
+testsuite:
+  - file:///mayhem/mayhem/testsuite/ml_kem_fuzz
+cmds:
+  - cmd: /mayhem/ml_kem_fuzz /mayhem/mayhem/testsuite/ml_kem_fuzz # mayhem-lint: ok-image-path
+    libfuzzer: true

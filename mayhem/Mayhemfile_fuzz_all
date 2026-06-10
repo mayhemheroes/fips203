@@ -1,0 +1,7 @@
+project: fips203
+target: fuzz_all
+testsuite:
+  - file:///mayhem/mayhem/testsuite/fuzz_all
+cmds:
+  - cmd: /mayhem/fuzz_all /mayhem/mayhem/testsuite/fuzz_all # mayhem-lint: ok-image-path
+    libfuzzer: true
