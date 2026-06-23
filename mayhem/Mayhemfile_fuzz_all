@@ -1,0 +1,8 @@
+project: fips203
+target: fuzz_all
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_all/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_all # mayhem-lint: ok-image-path
+    libfuzzer: true
